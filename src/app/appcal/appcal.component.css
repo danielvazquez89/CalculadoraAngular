@@ -1,0 +1,49 @@
+td {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+.numeros, .operaciones {
+  width: 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.td-c {
+  border: none;
+}
+
+.operaciones {
+  background-color: rgb(43, 39, 127);
+}
+
+.btn-igual, .btn-operaciones {
+  color: white;
+}
+
+.btn-numeros, .btn-operaciones, .btn-igual {
+  width: 100%;
+}
+
+.igual {
+  background-color: green;
+  text-align: center;
+}
+
+button {
+  border: none;
+  background: none;
+  text-align: center;
+}
+
+.btn-c {
+  background-color: red;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+

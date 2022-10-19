@@ -1,0 +1,36 @@
+<h1></h1>
+<tr>
+  <td class="td-c">
+    <button (click)="refresh()" class="btn-c">C</button>
+    <!--<button (click)="clearError()" class="btn-c">CE</button>-->
+  </td>
+  <td class="td-resultado">
+    <h2 class="resultado" *ngIf="!isNaN">{{resultado}}</h2>
+    <h4 class="resultado" *ngIf="isNaN">Syntax Error</h4>
+  </td>
+  <td class="temporal">{{operacionEntera}}</td>
+</tr>
+<tr>
+  <td class="numeros"><button class="btn-numeros" (click)="addNumero('7')">7</button></td>
+  <td class="numeros"><button class="btn-numeros" (click)="addNumero('8')">8</button></td>
+  <td class="numeros"><button class="btn-numeros" (click)="addNumero('9')">9</button></td>
+  <td class="operaciones"><button class="btn-operaciones" (click)="addNumero('/')">/</button></td>
+</tr>
+<tr>
+  <td class="numeros"><button class="btn-numeros" (click)="addNumero('4')">4</button></td>
+  <td class="numeros"><button class="btn-numeros" (click)="addNumero('5')">5</button></td>
+  <td class="numeros"><button class="btn-numeros" (click)="addNumero('6')">6</button></td>
+  <td class="operaciones"><button class="btn-operaciones" (click)="addNumero('X')">X</button></td>
+</tr>
+<tr>
+  <td class="numeros"><button class="btn-numeros" (click)="addNumero('1')">1</button></td>
+  <td class="numeros"><button class="btn-numeros" (click)="addNumero('2')">2</button></td>
+  <td class="numeros"><button class="btn-numeros" (click)="addNumero('3')">3</button></td>
+  <td class="operaciones"><button class="btn-operaciones" (click)="addNumero('-')">-</button></td>
+</tr>
+<tr>
+  <td class="numeros"><button class="btn-numeros" (click)="addNumero('0')">0</button></td>
+  <td class="numeros"><button class="btn-numeros" (click)="addNumero('.')">.</button></td>
+  <td class="igual"><button class="btn-igual" (click)="calcular()">=</button></td>
+  <td class="operaciones"><button class="btn-operaciones" (click)="addNumero('+')">+</button></td>
+</tr>
